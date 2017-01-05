@@ -1,5 +1,8 @@
 <?php
 
+# Usage example:
+#   curl https://analytics.northpolewonderland.com/index.php -b AUTH=$(php analytics_cookie.php)
+
 # From crypto.php:
 
 define('KEY', "\x61\x17\xa4\x95\xbf\x3d\xd7\xcd\x2e\x0d\x8b\xcb\x9f\x79\xe1\xdc");
