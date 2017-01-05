@@ -31,14 +31,6 @@ def extract_table(txt):
         cols = [c.text_content().strip() for c in row.findall("td")]
         yield dict(zip(col_names, cols))
 
-def extract_encoded_mp3(txt):
-    q = pyquery.PyQuery(txt)
-    # The header uses th's, so we just need the TDs
-    tds = q("td")
-    filename = tds.eq(0).text()
-    contents = tds.eq(1).text()
-    return filename, contents.decode('base64')
-
 class Analytics:
     def __init__(self):
         self.s = requests.session()
